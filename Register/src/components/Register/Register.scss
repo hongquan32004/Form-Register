@@ -1,0 +1,322 @@
+.register {
+    width: 1300px;
+    height: 650px;
+    background: white;
+    border-radius: 20px;
+
+
+    .register-search {
+        display: flex;
+        justify-content: space-around;
+        height: 60px;
+        align-items: center;
+        position: relative;
+        border-bottom: 2px solid rgb(187, 187, 187);
+
+
+        .register-search-left {
+
+
+            a {
+                padding-right: 7px;
+                padding-left: 7px;
+                text-decoration: none;
+                color: rgb(187, 187, 187);
+            }
+
+            i {
+                color: rgb(187, 187, 187);
+            }
+
+            a:hover {
+                color: rgb(86, 86, 86);
+            }
+        }
+
+        .register-search-center {
+
+            display: flex;
+            align-items: center;
+
+            i {
+                height: 35px;
+                width: 40px;
+                border-radius: 5px 0px 0px 5px;
+                border: 1px solid rgb(187, 187, 187);
+                border-right: 0px;
+                padding: 10px;
+                color: rgb(187, 187, 187);
+            }
+
+            input {
+                width: 300px;
+                height: 35px;
+                border-radius: 0px 5px 5px 0px;
+                outline: none;
+                border: 1px solid rgb(187, 187, 187);
+                border-left: 0px;
+                padding: 10px 5px;
+
+            }
+        }
+
+        .register-search-right {
+            display: flex;
+            align-items: center;
+
+            i {
+                padding: 10px;
+                font-size: 20px;
+                color: rgb(187, 187, 187);
+            }
+
+            img {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .register-content {
+        display: flex;
+        height: 590px;
+
+
+        .register-content-list {
+            width: 30%;
+            border-right: 2px solid rgb(187, 187, 187);
+
+            .img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+                position: relative;
+
+                img {
+                    border-radius: 50%;
+                }
+
+                i {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 13px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 220px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background: rgb(55, 54, 54);
+                    cursor: pointer;
+                    transition: all 0.5s;
+                }
+
+
+                i:hover {
+                    transform: scale(1.4);
+                }
+            }
+
+            .list {
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: auto;
+
+
+                .list-content {
+                    width: 100%;
+                    height: 30px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:first-child {
+                        border-right: 3px solid rgb(55, 54, 54);
+
+                        i {
+                            color: rgb(55, 54, 54);
+                        }
+
+                        span {
+                            color: rgb(55, 54, 54);
+                        }
+                    }
+
+                    i {
+                        padding-right: 10px;
+                        font-size: 19px;
+                        color: rgb(187, 187, 187);
+                    }
+
+                    span {
+                        font-size: 19px;
+                        color: rgb(187, 187, 187);
+
+                    }
+                }
+
+                .list-content:hover {
+                    border-right: 3px solid rgb(55, 54, 54);
+
+                    i {
+                        color: rgb(55, 54, 54);
+                    }
+
+                    span {
+                        color: rgb(55, 54, 54);
+                    }
+                }
+            }
+        }
+
+        .register-content-input {
+            width: 70%;
+
+            h1 {
+                padding: 20px 40px;
+                color: rgb(112, 112, 138);
+            }
+
+            Form {
+                padding: 0px 40px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+
+                .input-left {
+                    label {
+                        font-size: 17px;
+                        color: rgb(187, 187, 187);
+                    }
+
+                    .birthday-input {
+                        display: flex;
+                        justify-content: space-between;
+
+
+                        .birthday:first-child {
+                            width: 110px;
+                            height: 35px;
+                            outline: none;
+                            border-radius: 10px;
+                            border: 2px solid rgb(187, 187, 187);
+                            padding: 0px 15px;
+                            cursor: pointer;
+                            background: white;
+                        }
+
+                        .birthday:nth-child(2) {
+                            width: 60px;
+                            height: 35px;
+                            outline: none;
+                            border-radius: 10px;
+                            border: 2px solid rgb(187, 187, 187);
+                            padding: 0px 15px;
+                            cursor: pointer;
+                            background: white;
+                        }
+
+                        .birthday:last-child {
+                            width: 90px;
+                            height: 35px;
+                            outline: none;
+                            border-radius: 10px;
+                            border: 2px solid rgb(187, 187, 187);
+                            padding: 0px 15px;
+                            cursor: pointer;
+                            background: white;
+                        }
+
+                    }
+
+                    .input {
+                        width: 350px;
+                        height: 35px;
+                        outline: none;
+                        border-radius: 10px;
+                        border: 2px solid rgb(187, 187, 187);
+                        padding: 0px 15px;
+                        background: white;
+                    }
+                }
+
+                .input-right {
+                    label {
+                        font-size: 17px;
+                        color: rgb(113, 113, 113);
+                    }
+
+                    .input {
+                        width: 350px;
+                        height: 35px;
+                        outline: none;
+                        border-radius: 10px;
+                        border: 2px solid rgb(187, 187, 187);
+                        padding: 0px 15px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        color: rgb(187, 187, 187);
+                    }
+
+                    .toggle {
+                        display: flex;
+                        justify-content: space-between;
+
+
+                        p {
+                            font-size: 17px;
+                            color: rgb(113, 113, 113);
+                        }
+
+                        .toggle-container {
+                            position: relative;
+                            width: 45px;
+                            height: 25px;
+                            background: #286393;
+                            border-radius: 28px;
+                            padding: 1px 0.5px;
+
+                            cursor: pointer;
+
+                            .toggle-btn {
+                                position: absolute;
+                                width: 24px;
+                                height: 23px;
+                                background: white;
+                                border-radius: 50%;
+
+                            }
+
+                            .disable {
+                                right: 1px;
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 130px;
+                        height: 50px;
+                        background: rgb(112, 112, 138);
+                        color: white;
+                        border-radius: 10px;
+                        border: 1px solid rgb(83, 83, 102);
+                        cursor: pointer;
+
+
+                    }
+
+                    button:hover {
+                        background: rgb(42, 42, 53);
+                    }
+                }
+            }
+        }
+    }
+}
